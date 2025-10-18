@@ -1,0 +1,22 @@
+# Web Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+
+# AI & ML - Using older stable version compatible with Windows
+crewai==0.28.8
+openai==1.55.3
+
+# Database & Storage
+pymongo==4.10.1
+chromadb==0.5.23
+redis==5.2.0
+
+# Task Queue
+celery==5.4.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.67.1
+requests==2.32.3
+jinja2==3.1.4
