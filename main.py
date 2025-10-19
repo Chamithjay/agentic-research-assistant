@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from database import close_mongo_connection, connect_to_mongo
+from routers import planner_router
 
 app = FastAPI()
 
@@ -16,3 +17,4 @@ async def shutdown_event():
     await close_mongo_connection()
 
 
+app.include_router(planner_router.router)

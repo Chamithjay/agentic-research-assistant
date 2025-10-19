@@ -4,8 +4,12 @@ uvicorn[standard]==0.32.0
 python-multipart==0.0.12
 
 # AI & ML - Using older stable version compatible with Windows
+
 crewai==0.28.8
 openai==1.55.3
+google-generativeai==0.8.5
+
+
 
 # Database & Storage
 pymongo==4.9.2
