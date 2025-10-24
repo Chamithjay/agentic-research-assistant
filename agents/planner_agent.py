@@ -1,14 +1,15 @@
 # agents/planner_agent.py
 import os
 from dotenv import load_dotenv
-from crewai import Agent
-from langchain_google_genai import ChatGoogleGenerativeAI
+from crewai import Agent, LLM
+
 
 load_dotenv()
 
 # Configure Google Gemini LLM
-llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash",
+# Note: For CrewAI with LiteLLM, use "gemini/gemini-pro" format
+llm = LLM(
+    model="gemini/gemini-2.5-flash",
     google_api_key=os.getenv("GOOGLE_API_KEY"),
     temperature=0.7,
     convert_system_message_to_human=True  # Important for Gemini compatibility

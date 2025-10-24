@@ -1,0 +1,27 @@
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+# AI & ML
+crewai
+openai
+google-generativeai
+
+# LangChain packages
+
+# Database & Storage
+pymongo
+motor
+chromadb
+redis
+
+# Task Queue
+celery
+
+# Utilities
+python-dotenv
+tqdm
+requests
+jinja2
+httpx
